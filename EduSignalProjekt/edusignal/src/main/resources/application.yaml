@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: edusignal
+  datasource:
+    url: jdbc:mysql://localhost:3306/edusignal?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate # ellenőrzi hogy az entitások egyeznek-e a sémával de Db-t nem módosit
+    show-sql: false # ne írja ki minden SQL lekérdezést a konzolra
+    open-in-view: false # teljesítmény optimalizáció
+
+server:
+  port: 8080
+
+jwt:
+  secret: csereleMegEztProductionban2026!!
+  expiration: 86400000 # token lejárat: 24 óra milliszekundumban
