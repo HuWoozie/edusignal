@@ -2,7 +2,6 @@ package com.edusignal.security;
 
 
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,8 +20,8 @@ public class JwtService {
     @Value("${jwt.expiration}")
     private Long expiration;
 
-    private SecretKey getSigninKey(){
-        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+    private SecretKey getSigninKey() {
+        byte[] keyBytes = secretKey.getBytes(java.nio.charset.StandardCharsets.UTF_8);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
