@@ -20,23 +20,23 @@ public class Felhasznalok{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, length = 100, unique = false)
+    @Column( name = "firstname", nullable = false, length = 100, unique = false)
     private String firstname;
 
-    @Column(nullable = false, length = 100, unique = false)
-    private String latname;
+    @Column(name = "lastname", nullable = false, length = 100, unique = false)
+    private String lastname;
 
-    @Column(nullable = false, length = 255, unique = true)
+    @Column( name = "email", nullable = false, length = 255, unique = true)
     private String email;
 
-    @Column(nullable = false, length = 255, unique = false)
+    @Column( name = "password", nullable = false, length = 255, unique = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
 
-    @Column(unique = true, nullable = false, length = 36)
+    @Column(nullable = false, unique = true, columnDefinition = "CHAR(36)")
     private String guid;
 
     @Column(nullable = false, unique = false, updatable = false)
