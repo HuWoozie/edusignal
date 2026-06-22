@@ -9,4 +9,6 @@ public interface FelhasznaloRepository extends JpaRepository<Felhasznalok, Integ
 
     Optional<Felhasznalok> findByEmail(String email);
 
+    Optional<Felhasznalok> findById(Integer id);
+
 }
