@@ -30,3 +30,17 @@ EduSignalProjekt/edusignal/.idea/compiler.xml
 .idea/dictionaries/project.xml
 .idea/dbnavigator.xml
 .idea/compiler.xml
+
+### Mac ###
+.DS_Store
+EduSignalProjekt/.DS_Store
+
+### IntelliJ ###
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### Environment ###
+application-local.yml
+.env
