@@ -15,3 +15,18 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+.DS_Store
+EduSignalProjekt/edusignal/.idea/misc.xml
+EduSignalProjekt/edusignal/.idea/jarRepositories.xml
+EduSignalProjekt/edusignal/.idea/encodings.xml
+EduSignalProjekt/edusignal/.idea/dbnavigator.xml
+EduSignalProjekt/edusignal/.idea/compiler.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/jarRepositories.xml
+.idea/encodings.xml
+.idea/edusignal.iml
+.idea/dictionaries/project.xml
+.idea/dbnavigator.xml
+.idea/compiler.xml
